@@ -1,0 +1,8 @@
+{% extends "admin/base.html" %} {% block title %}Mi Panel de Administración{%
+endblock %} {% block branding %}
+<h1 id="site-name">
+  <a href="{% url 'admin:index' %}">Mi Administración Personalizada</a>
+</h1>
+{% endblock %} {% block nav-global %}
+<div>¡Bienvenido al panel de administración!</div>
+{% endblock %}
