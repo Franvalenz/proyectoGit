@@ -18,5 +18,6 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    path('grappelli/', include('grappelli.urls')), # Se añade la URL de la app cread
     path('admin/', admin.site.urls),
 ]
