@@ -1,8 +1,20 @@
-{% extends "admin/base.html" %} {% block title %}Mi Panel de Administración{%
-endblock %} {% block branding %}
+{% extends "admin/base.html" %} {% load static %}
+<!-- Carga la etiqueta static -->
+
+{% block title %} Mi Panel de Administración {% endblock %} {% block branding %}
 <h1 id="site-name">
   <a href="{% url 'admin:index' %}">Mi Administración Personalizada</a>
 </h1>
 {% endblock %} {% block nav-global %}
 <div>¡Bienvenido al panel de administración!</div>
 {% endblock %}
+
+<!-- prettier-ignore-start -->
+{% block extrahead %} {{ block.super }}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/admin_custom.css' %}"
+/>
+{% endblock %}
+<!-- prettier-ignore-end -->
