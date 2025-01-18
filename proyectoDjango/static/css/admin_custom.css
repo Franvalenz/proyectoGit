@@ -1,0 +1,39 @@
+
+/* admin_custom.css */
+
+/* Cambiar el color del encabezado */
+#site-name {
+    color: #4CAF50; /* Verde */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Fondo de la barra lateral */
+#nav-sidebar {
+    background-color: #333;
+    color: white;
+}
+
+/* Cambiar el color de los enlaces */
+#nav-sidebar a {
+    color: #4CAF50;
+}
+
+/* Efecto hover para enlaces */
+#nav-sidebar a:hover {
+    color: #FFFFFF;
+}
+
+/* Personalizar botones */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
